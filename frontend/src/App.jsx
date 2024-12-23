@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import {HomePage, LoginPage, SignUpPage} from "./Pages"
+import {HomePage, LoginPage, SignUpPage} from "./pages"
 import {Navbar} from "./components"
 import { Toaster } from 'react-hot-toast'
 import { useUserStore } from './stores/useUserStore'
