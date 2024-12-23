@@ -47,7 +47,7 @@ Discover the joy of shopping made simple with EzyShopper—where convenience mee
 ## Frontend
 - React for frontend
 - Tailwind CSS for styling
-- Framer-motion for adnimations
+- Framer-motion for animations
 
 ## Backend
 - MongoDB (node, express)
