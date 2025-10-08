@@ -1,0 +1,14 @@
+https://github.com/burakorkmez/mern-ecommerce/blob/master/backend/server.js
+
+https://console.cloudinary.com/settings/c-c3b3cc9090b186156c50082fa91b52/api-keys
+
+https://dashboard.stripe.com/dashboard
+
+https://www.youtube.com/watch?v=sX57TLIPNx8
+
+https://cloud.mongodb.com/v2/67154a17b17da829600f6073#/metrics/replicaSet/67154abd609248771b2b33d2/explorer/ecommerce_db/users/find
+
+https://console.upstash.com/redis/f8801889-1358-4fe3-9eb7-50ef88c5bf61?tab=data-browser&teamid=0
+
+
+at Deployment

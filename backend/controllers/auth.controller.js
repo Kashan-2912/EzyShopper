@@ -75,6 +75,7 @@ export const signin = async (req, res) => {
             })
         }
         else{
+            console.log("Invalid credentials")
             res.status(401).json({message: "Invalid credentials"})
         }
     } catch (error) {
@@ -105,7 +106,7 @@ export const refreshToken = async (req, res) => {
     try {
         const refreshToken = req.cookies.refreshToken;
         if(!refreshToken) {
-            res.status(401).json({message: "No refresh token provided"})
+            return res.status(401).json({message: "No refresh token provided"})
         }
 
         const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET)
@@ -124,7 +125,7 @@ export const refreshToken = async (req, res) => {
             maxAge: 15*60*1000
         })
 
-        res.json({message: "Token refreshed successfully."})
+        return res.json({message: "Token refreshed successfully."})
     } catch (error) {
         console.log("Error in refresh token controller", error.message)
         res.status(500).json({message: "Server error", error: error.message})

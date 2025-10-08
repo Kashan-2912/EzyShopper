@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": { //if we are under /api route, then do target localhost:5000 as proxy to apply cors
-        target: "http://localhost:5000",
+      "/api": { //if we are under /api route, then do target localhost:3000 as proxy to apply cors
+        target: "http://localhost:3000",
       }
     }
   }
