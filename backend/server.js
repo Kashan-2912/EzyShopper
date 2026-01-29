@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "http://localhost:5173", // For local dev
-  "http://ezyshopper-frontend.s3-website.ap-south-1.amazonaws.com", 
+  "https://ezyshopper.vercel.app/", 
 ];
 
 const __dirname = path.resolve();
