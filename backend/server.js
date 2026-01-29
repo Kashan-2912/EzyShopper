@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import cookieParser from "cookie-parser";
 import path from "path";
+import cors from "cors";
 
 // routes
 import authRoutes from "./routes/auth.route.js"
@@ -19,9 +20,19 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const allowedOrigins = [
+  "http://localhost:5173", // For local dev
+  "http://ezyshopper-frontend.s3-website.ap-south-1.amazonaws.com", 
+];
+
 const __dirname = path.resolve();
 
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // allows cookies or auth headers
+}));
 app.use(express.json({limit: "10mb"})) // allow to parse body of request
+app.use(express.static('public'));
 app.use(cookieParser())
 
 app.use("/api/auth", authRoutes);
