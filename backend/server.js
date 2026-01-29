@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "http://localhost:5173", // For local dev
-  "https://ezyshopper.vercel.app/", 
+  "https://ezyshopper-vercel.app", 
 ];
 
 const __dirname = path.resolve();
